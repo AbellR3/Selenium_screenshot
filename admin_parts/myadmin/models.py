@@ -1,7 +1,5 @@
 from django.db import models
 
-# Create your models here.
-
 
 class Page(models.Model):
     page_title = models.CharField(max_length=600)
@@ -17,8 +15,9 @@ class Element(models.Model):
                 ('class name', 'class name'),
                 ('XPATH', 'XPATH'),
                 ('tag name', 'tag name'))
-    selector = models.CharField(max_length=50, choices = SELECTOR)
-    setted_image = models.CharField(max_length=300, default=None)
+    selector_type = models.CharField(max_length=50, choices = SELECTOR)
+    selector_text = models.CharField(max_length=300, default=None)
+
 
     def __str__(self):
         return self.selector_name
