@@ -18,5 +18,6 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.save, name = 'save'),
+    path('save/', views.save, name = 'save'),
+    path('compare/', views.compare_image, name = 'compare'),
 ]
