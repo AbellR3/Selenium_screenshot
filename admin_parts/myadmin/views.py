@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from myadmin.selenium_parts.compare_screenshot import compare_screenshot
 import os
 from myadmin.selenium_parts.BaseClass import BaseClass
-import time
+
 from typing import NamedTuple
 from selenium.common.exceptions import InvalidArgumentException, InvalidSelectorException
 
