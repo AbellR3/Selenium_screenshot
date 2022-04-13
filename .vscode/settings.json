@@ -1,0 +1,6 @@
+{
+    "python.analysis.extraPaths": [
+        "./selemium_parts",
+        "./admin_parts/myadmin/selemium_parts"
+    ]
+}
